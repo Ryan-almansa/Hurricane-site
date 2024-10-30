@@ -222,17 +222,17 @@ header a {
 }
 
 .hero {
-  background-image: url('https://imgur.com/nmaItwr.jpg'); /* Remplace par l'image de ton choix */
+  background-image: url('https://imgur.com/AMKyNZ3.jpg'); 
   background-size: cover;
-  color: #fff;
+  color: #ffffffc9;
   padding: 4rem;
   text-align: center;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #0066cc;
-  color: #fff;
+  background-color: #0a294e;
+  color: #161414;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -248,10 +248,13 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  padding: 0.5rem; /* Réduit l'espace autour du texte */
+  font-size: 0.8rem; /* Diminue la taille du texte */
+}
+
+footer p {
+  margin: 0; /* Supprime les marges supplémentaires */
+  line-height: 1.2; /* Ajuste l'espacement des lignes */
 }
 
 
