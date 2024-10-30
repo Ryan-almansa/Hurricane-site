@@ -178,6 +178,86 @@ a:hover {
 
 
 
+/********************page lanceur *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('https://imgur.com/nmaItwr.jpg'); /* Remplace par l'image de ton choix */
+  background-size: cover;
+  color: #fff;
+  padding: 4rem;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0066cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+
 
 
 
