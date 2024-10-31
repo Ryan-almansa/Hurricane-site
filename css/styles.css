@@ -71,21 +71,7 @@
   animation: spark-animation 1.5s linear infinite;
 }
 
-/* Animation des étincelles */
-@keyframes spark-animation {
-  0% {
-    transform: translateY(0) translateX(0) scale(0.5);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(calc(50px * var(--direction-y))) translateX(calc(50px * var(--direction-x))) scale(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(calc(100px * var(--direction-y))) translateX(calc(100px * var(--direction-x))) scale(0.5);
-    opacity: 0;
-  }
-}
+
 
 
 
@@ -258,7 +244,44 @@ footer p {
 }
 
 
-
+/******badge team **********/
+.badge1 {
+  --bs-badge-padding-x: 0.65em;
+  --bs-badge-padding-y: 0.35em;
+  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-weight: 700;
+  --bs-badge-border-radius: 0.375rem;
+  display: inline-block;
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+  font-size: var(--bs-badge-font-size);
+  font-weight: var(--bs-badge-font-weight);
+  line-height: 1;
+  color: var(--bs-badge-color);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--bs-badge-border-radius);
+}
+@keyframes clignoter {
+  0% { opacity: 50; 
+  color: rgb(167, 26, 26);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  } 
+  50% { opacity: 40; 
+      color: rgba(192, 176, 29, 0.801);
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-weight: bold;
+  } 
+  100% { opacity: 10;
+  
+      color: rgb(167, 26, 26);
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-weight: bold;}   
+}
 
 
 
@@ -8345,6 +8368,35 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
+
+.text-whit {
+  color: rgba(204, 218, 18, 0.644);
+  
+  font-weight: bold;
+  animation: clignoter 1.0s infinite; 
+}
+@keyframes clignoter {
+  0% { opacity: 50; 
+  color: rgb(167, 26, 26);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  } 
+  50% { opacity: 40; 
+      color: rgba(192, 176, 29, 0.801);
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-weight: bold;
+  } 
+  100% { opacity: 10;
+  
+      color: rgb(167, 26, 26);
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-weight: bold;}   
+}
+
+
 
 .text-body {
   --bs-text-opacity: 1;
