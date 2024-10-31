@@ -244,48 +244,34 @@ footer p {
 }
 
 
-/******badge team **********/
-.badge1 {
-  --bs-badge-padding-x: 0.65em;
-  --bs-badge-padding-y: 0.35em;
-  --bs-badge-font-size: 0.75em;
-  --bs-badge-font-weight: 700;
-  --bs-badge-border-radius: 0.375rem;
-  display: inline-block;
-  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
-  font-size: var(--bs-badge-font-size);
-  font-weight: var(--bs-badge-font-weight);
-  line-height: 1;
-  color: var(--bs-badge-color);
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: var(--bs-badge-border-radius);
+
+
+
+
+/*******************carte trio*************/
+
+
+
+  @keyframes clignoter {
+    0% { opacity: 50; 
+    color: rgb(167, 26, 26);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    } 
+    50% { opacity: 40; 
+        color: rgba(192, 176, 29, 0.801);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-weight: bold;
+    } 
+    100% { opacity: 10;
+    
+        color: rgb(167, 26, 26);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-weight: bold;}   
 }
-@keyframes clignoter {
-  0% { opacity: 50; 
-  color: rgb(167, 26, 26);
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-weight: bold;
-  } 
-  50% { opacity: 40; 
-      color: rgba(192, 176, 29, 0.801);
-      padding: 5px 10px;
-      border-radius: 15px;
-      font-weight: bold;
-  } 
-  100% { opacity: 10;
-  
-      color: rgb(167, 26, 26);
-      padding: 5px 10px;
-      border-radius: 15px;
-      font-weight: bold;}   
-}
-
-
-
-
 
 
 
@@ -4555,6 +4541,8 @@ textarea.form-control-lg {
   padding: var(--bs-card-img-overlay-padding);
   border-radius: var(--bs-card-inner-border-radius);
 }
+
+
 
 .card-img,
 .card-img-top,
