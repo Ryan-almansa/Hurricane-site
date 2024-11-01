@@ -226,9 +226,48 @@ footer p {
 
 
 
-/****************page plus************/
+/****************page parck************/
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
 
+/* Couleur de la banderole */
+.banner {
+  background-color: #96a0a09d; 
+  white-space: nowrap; 
+  overflow: hidden; 
+}
+
+/*défilement */
+.banner-content {
+  display: inline-block;
+  padding: 5px ;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: slide-left 20s linear infinite;
+}
+
+.banner-link {
+  text-decoration: none;
+  color: white;
+}
+/*  de droite à gauche */
+@keyframes slide-left {
+  0% {
+      transform: translateX(150%); 
+  }
+  100% {
+      transform: translateX(-200%); 
+  }
+}
 
 
 
