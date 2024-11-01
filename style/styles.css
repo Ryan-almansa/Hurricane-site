@@ -20,20 +20,20 @@
 
  @keyframes clignoter {
   0% { opacity: 50; 
-  color: rgb(167, 26, 26);
+  color: rgb(26, 111, 167);
   padding: 5px 10px;
   border-radius: 15px;
   font-weight: bold;
   } 
   50% { opacity: 40; 
-      color: rgba(192, 176, 29, 0.801);
+      color: rgba(23, 197, 139, 0.801);
       padding: 5px 10px;
       border-radius: 15px;
       font-weight: bold;
   } 
   100% { opacity: 10;
   
-      color: rgb(167, 26, 26);
+      color: rgba(118, 167, 26, 0.616);
       padding: 5px 10px;
       border-radius: 15px;
       font-weight: bold;}   
@@ -211,13 +211,13 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 0.5rem; /* Réduit l'espace autour du texte */
-  font-size: 0.8rem; /* Diminue la taille du texte */
+  padding: 0.5rem; 
+  font-size: 0.8rem; 
 }
 
 footer p {
-  margin: 0; /* Supprime les marges supplémentaires */
-  line-height: 1.2; /* Ajuste l'espacement des lignes */
+  margin: 0; 
+  line-height: 1.2; 
 }
 
 
@@ -226,17 +226,9 @@ footer p {
 
 
 
-/****************page parck************/
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-}
+
+
 
 /* Couleur de la banderole */
 .banner {
@@ -259,6 +251,7 @@ footer {
   text-decoration: none;
   color: white;
 }
+
 /*  de droite à gauche */
 @keyframes slide-left {
   0% {
@@ -269,6 +262,14 @@ footer {
   }
 }
 
+/********************footer************/
+footer {
+  padding: 5px 0; 
+  margin-top: 10px; 
+  min-height: 50px; 
+
+}
+
 
 
 
@@ -276,27 +277,7 @@ footer {
 
 
 
-  @keyframes clignoter {
-    0% { opacity: 50; 
-    color: rgb(167, 26, 26);
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-weight: bold;
-    } 
-    50% { opacity: 40; 
-        color: rgba(192, 176, 29, 0.801);
-        padding: 5px 10px;
-        border-radius: 15px;
-        font-weight: bold;
-    } 
-    100% { opacity: 10;
-    
-        color: rgb(167, 26, 26);
-        padding: 5px 10px;
-        border-radius: 15px;
-        font-weight: bold;}   
-}
-
+ 
 
 
 
