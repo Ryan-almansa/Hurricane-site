@@ -238,13 +238,29 @@ footer p {
 }
 
 /*défilement */
+
 .banner-content {
   display: inline-block;
   padding: 5px ;
   font-size: 18px;
   font-weight: bold;
   white-space: nowrap;
-  animation: slide-left 20s linear infinite;
+  animation: slide-left 10s linear infinite;
+}
+
+.banner-link {
+  text-decoration: none;
+  color: white;
+}
+
+/*  de droite à gauche */
+@keyframes slide-left {
+  0% {
+      transform: translateX(0%); 
+  }
+  100% {
+      transform: translateX(-100%); 
+  }
 }
 
 .banner-link {
@@ -977,7 +993,7 @@ progress {
 
 .row-cols-2 > * {
   flex: 0 0 auto;
-  width: 50%;
+  
 }
 
 .row-cols-3 > * {
@@ -4045,7 +4061,6 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
-  margin-right: var(--bs-navbar-brand-margin-end);
   font-size: var(--bs-navbar-brand-font-size);
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
@@ -11130,5 +11145,23 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+
+
+/***style custom***/
+.navbar-custom{
+  flex-direction: row;
+}
+
+.custom-cards-container{
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
+}
+
+.custom-card-container{
+  @media (max-width: 425px) {
+    width: 100% !important; 
   }
 }
