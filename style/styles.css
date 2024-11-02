@@ -185,7 +185,6 @@ header a {
 }
 
 .hero {
-  background-image: url('https://imgur.com/Wb6yAnb.jpg'); 
   background-size: cover;
   color: #ffffff;
   padding: 4rem;
@@ -245,7 +244,7 @@ footer p {
   font-size: 18px;
   font-weight: bold;
   white-space: nowrap;
-  animation: slide-left 10s linear infinite;
+  animation: slide-left 15s linear infinite;
 }
 
 .banner-link {
@@ -291,7 +290,19 @@ footer {
 
 /*******************carte trio*************/
 
-
+#visitorCounter {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  z-index: 1000;
+}
 
  
 
