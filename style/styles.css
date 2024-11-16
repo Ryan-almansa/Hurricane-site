@@ -11,6 +11,37 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+
+/******aceuil**** */
+
+
+#particleCanvas {
+  width: 100%;
+  height: 100%;
+}
+#animated-text {
+  font-size: 3rem;
+  animation: typing 3s steps(30) infinite alternate;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+
+
+
 .lumineux{
   color: rgba(204, 218, 18, 0.644);
   font-size: 20px;
