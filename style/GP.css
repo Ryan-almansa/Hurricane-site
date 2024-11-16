@@ -224,3 +224,164 @@ footer {
     font-size: 0.9rem;
     color: #777;
 }
+
+
+
+/**********test**********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #000;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+#neon-title {
+    font-size: 3.5rem;
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff, 0 0 15px #00eaff;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+.typewriter {
+    font-size: 1.5rem;
+    border-right: 3px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 8s steps(40, end) infinite, blink 1s step-end infinite;
+}
+
+/* Animation pour l'effet machine à écrire */
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+    }
+}
+
+/* Animation pour le curseur clignotant */
+@keyframes blink {
+    50% { 
+        border-color: transparent; 
+    }
+}
+
+
+
+
+@keyframes neon-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+.pilotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.pilote-card {
+    background-color: #1c1c1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.pilote-card:hover {
+    transform: translateY(-10px);
+}
+
+.pilote-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+form button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffa500;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #777;
+}

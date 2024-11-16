@@ -42,3 +42,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typeEffect();
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const textElement = document.getElementById('dynamic-text');
+    const textArray = [
+        'Découvrez les champions du Moto GP.',
+        'Plongez dans l\'univers de la vitesse.',
+        'Rencontrez les pilotes légendaires.',
+        'Les rois des circuits en un clic !'
+    ];
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let currentText = '';
+    let isDeleting = false;
+
+    function typeEffect() {
+        if (isDeleting) {
+            currentText = textArray[textIndex].substring(0, charIndex--);
+        } else {
+            currentText = textArray[textIndex].substring(0, charIndex++);
+        }
+
+        textElement.textContent = currentText;
+
+        if (!isDeleting && charIndex === textArray[textIndex].length) {
+            setTimeout(() => isDeleting = true, 1000);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % textArray.length;
+        }
+
+        const speed = isDeleting ? 50 : 100;
+        setTimeout(typeEffect, speed);
+    }
+
+    typeEffect();
+});
