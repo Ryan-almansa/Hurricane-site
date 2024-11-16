@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #1c1c1e;
+    color: #fff;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #000;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    height: 40px;
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    opacity: 0;
+    transform: translateX(-100px) rotate(-15deg);
+}
+
+.nav-item[data-moto="moto1"]::after {
+    background-image: url('https://cdn-6.motorsport.com/images/amp/2wBW7eV0/s1000/joan-mir-team-suzuki-motogp-1.jpg');
+}
+
+.nav-item[data-moto="moto2"]::after {
+    background-image: url('https://media.ouest-france.fr/v1/pictures/MjAyNDA4NTA0YWQ3Y2Q3ZWU0MzNiMTgwODUwZDBjN2QyZmEyNWQ?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=5d1835f5d37cb4d14f806bb86dc414d5f4f998ec9f6a4e11f91e0c8b3ed54ab6');
+}
+
+.nav-item[data-moto="moto3"]::after {
+    background-image: url('https://ds.static.rtbf.be/article/image/1920x1080/3/7/6/0c4b1eeb45c90b52bfb9d07943d855ab-1730814747.jpg');
+}
+
+.nav-item[data-moto="moto4"]::after {
+    background-image: url('https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/04/28/3957225-80358208-2560-1440.jpg');
+}
+
+.nav-item[data-moto="moto4"]::after {
+    background-image: url('https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/04/28/3957225-80358208-2560-1440.jpg');
+}
+
+.nav-item[data-moto="moto5"]::after {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeIIy-Wx-saQRmzCpmZeOaZUtyZLXeAAINBLSgIafq0xXWE0mMLh7NucckK2B8sqUSirM&usqp=CAU');
+}
+
+.nav-item[data-moto="moto6"]::after {
+    background-image: url('https://www.lequipe.fr/_medias/img-photo-jpg/fabio-quartararo-n-20-avait-realise-un-excellent-depart-ce-dimanche-a-perawongmetha-reuters/1500000002074136/635:264,1956:1145-828-552-75/a9eb0.jpg');
+}
+
+.nav-item[data-moto="moto7"]::after {
+    background-image: url('https://resources.motogp.pulselive.com/photo-resources/2023/09/03/a20d875c-c1cc-413f-a8f6-084aa9b25c77/_LGZ1563.jpg?width=1440&height=810');
+}
+
+.nav-item[data-moto="moto8"]::after {
+    background-image: url('https://www.gp-inside.com/content/images/2024/06/brad-binder-marc-marquez-barcelone-motogp-2024.jpg');
+}
+
+
+.nav-item:hover::after {
+    transform: translateX(400px) rotate(15deg);
+    opacity: 1;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    animation: text-pop-up 1s ease-out;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffa500;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #333;
+    margin-top: 50px;
+}
+
+
+form button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffa500;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Effet Néon pour les Titres */
+#neon-title, .neon {
+    font-size: 3rem;
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff, 
+                 0 0 40px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff;
+    animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 4px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff,
+                     0 0 40px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+/* Effet Machine à écrire */
+.typewriter {
+    font-size: 1.5rem;
+    border-right: 3px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 22ch; /* La largeur du texte affiché */
+    animation: typing 4s steps(22) 1s forwards, blink 0.75s infinite step-end;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 22ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
