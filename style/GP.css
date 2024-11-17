@@ -385,3 +385,25 @@ footer {
     background-color: #000;
     color: #777;
 }
+
+
+
+/****responsiveµ******/
+@media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+    }
+    .menu.active {
+      display: flex;
+    }
+    .menu-toggle {
+      display: flex;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
