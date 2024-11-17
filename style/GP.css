@@ -102,10 +102,10 @@ body {
     opacity: 1;
 }
 
-.hero {
+.heroo {
     height: 100vh;
-    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
     display: flex;
+    background: url('https://static.wui.fr/28/2024/03/photo_article/7127/8445/1200-L-le-programme-tv-complet-du-grand-prix-du-qatar-de-motogp-chanes-et-horaires-des-directs.jpg') no-repeat center center/cover;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -275,7 +275,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+    background: url('https://static.wui.fr/28/2024/05/photo_article/9572/9435/1200-L-gp-de-catalogne-de-motogp-en-direct-c-est-parti-barcelone.jpg') no-repeat center center/cover;
     padding-top: 100px;
 }
 
